@@ -1,0 +1,1000 @@
+@import url('http://fonts.cdnfonts.com/css/sofia-pro');
+
+html, body 
+{
+  background-color: #081639;
+
+  font-family: 'Sofia Pro', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+/* USED FOR DEBUGGING - Highlights every element */
+/* *{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+.gui-body /* Universal body of GUIs */
+{
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+
+  right: 5%;
+
+  min-width: 35%;
+  width: 40%;
+  max-width: 40%;
+  height: 60%;
+
+  border-radius: 2vh;
+
+  z-index: 1;
+}
+
+.gui-group /* Universal grouping of GUI elements */
+{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  height: 60%;
+}
+
+.inside-svg /* Container for interactive SVG in "What Is Inside" page */
+{
+  background-color: rgba(30,30,30,0.8);
+
+  display: block;
+  position: absolute;
+
+  left: 5%;
+
+  min-width: 35%;
+  width: 45%;
+  max-width: 45%;
+  height: 60%;
+
+  border-radius: 2vh;
+
+  z-index: 1;
+}
+.outerArea /* Scales the whole SVG in the "inside" pages */
+{
+  width: 95%;
+  height: 95%;
+}
+.interaction-label h3 /* Labels in the "inside" pages */
+{
+  background-color: rgba(30,30,30,0.5);
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1vh;
+
+  margin: auto;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8vh;
+
+  z-index: 50;
+}
+
+h1 /* Used for name of body in home GUI*/
+{
+  margin-top: 1vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4.5vw;
+}
+
+h2 /* Used for home GUI to identify "planet", "sun", or "dwarf planet" */
+{
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2vh;
+}
+
+#white-text
+{
+  color: white;
+}
+
+.title /* Title within one of the sections */
+{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 2vh;
+
+  font-size: 4vh;
+  text-decoration: underline;
+}
+
+p /* Paragraphs in each sections in GUI */
+{
+  margin: auto;
+  width: 90%;
+  height: 38vh;
+  color: black;
+  text-align: left;
+  font-weight: 300;
+  font-size: 2vh;
+
+  overflow-y: scroll;
+}
+
+.btn /* Universal button */
+{
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 9.5vh;
+  
+  border-color: transparent;
+  background-color: #9B976E;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+}
+
+.back-btn /* Universal back button */
+{
+  display: inline-flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+
+  bottom: 0;
+  
+  border-color: transparent;
+  border-radius: 0px 0px 2vh 2vh;
+}
+
+/* Sun CSS */
+#sun-home 
+{
+  background-color: #CBCE2D;
+  visibility: hidden;
+}
+#sun-what-is
+{
+  background-color: #CBCE2D;
+  visibility: hidden;
+}
+#sun-inside
+{
+  background-color: #CBCE2D;
+  visibility: hidden;
+}
+.sun-svg
+{
+  visibility: hidden;
+}
+#sun-photosphere-label
+{
+  position: absolute;
+  top: 80px;
+  left: 40%;
+}
+#sun-convection-label
+{
+  position: absolute;
+  top: 110px;
+  left: 40%;
+}
+#sun-radiative-label
+{
+  position: absolute;
+  top: 150px;
+  left: 40%;
+}
+#sun-core-label
+{
+  position: absolute;
+  top: 200px;
+  left: 40%;
+}
+#sun-facts
+{
+  background-color: #CBCE2D;
+  visibility: hidden;
+}
+.btn-sun
+{
+  border-color: transparent;
+  background-color: #A3AD26;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-sun:hover
+{
+  background-color:#d8e074
+}
+.back-btn-sun
+{
+  background-color: #A3AD26;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-sun:hover
+{
+  background-color:#d8e074;
+}
+
+/* Mercury CSS */
+#mercury-home 
+{
+  background-color: #8E681E;
+  visibility: hidden;
+}
+#mercury-what-is
+{
+  background-color: #8E681E;
+  visibility: hidden;
+}
+#mercury-inside
+{
+  background-color: #8E681E;
+  visibility: hidden;
+}
+.mercury-svg
+{
+  visibility: hidden;
+}
+#mercury-crust-label
+{
+  position: absolute;
+  top: 70px;
+  left: 40%;
+}
+#mercury-mantle-label
+{
+  position: absolute;
+  top: 110px;
+  left: 40%;
+}
+#mercury-core-label
+{
+  position: absolute;
+  top: 190px;
+  left: 40%;
+}
+#mercury-facts
+{
+  background-color: #8E681E;
+  visibility: hidden;
+}
+.btn-mercury
+{
+  border-color: transparent;
+  background-color: #714D17;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-mercury:hover
+{
+  background-color:#d89a3e
+}
+.back-btn-mercury
+{
+  background-color: #714D17;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-mercury:hover
+{
+  background-color:#d89a3e;
+}
+
+/* Venus CSS */
+#venus-home 
+{
+  background-color: #D3693C;
+  visibility: hidden;
+}
+#venus-what-is
+{
+  background-color: #D3693C;
+  visibility: hidden;
+}
+#venus-inside
+{
+  background-color: #D3693C;
+  visibility: hidden;
+}
+.venus-svg
+{
+  visibility: hidden;
+}
+#venus-crust-label
+{
+  position: absolute;
+  top: 55px;
+  left: 40%;
+}
+#venus-mantle-label
+{
+  position: absolute;
+  top: 100px;
+  left: 40%;
+}
+#venus-outer-core-label
+{
+  position: absolute;
+  top: 150px;
+  left: 40%;
+}
+#venus-inner-core-label
+{
+  position: absolute;
+  top: 192px;
+  left: 40%;
+}
+#venus-facts
+{
+  background-color: #D3693C;
+  visibility: hidden;
+}
+.btn-venus
+{
+  border-color: transparent;
+  background-color: #A3502D;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-venus:hover
+{
+  background-color:#dea086
+}
+.back-btn-venus
+{
+  background-color: #A3502D;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 130%;
+}
+.back-btn-venus:hover
+{
+  background-color:#dea086;
+}
+
+/* Earth CSS */
+#earth-home 
+{
+  background-color: #1E8E43;
+  visibility: hidden;
+}
+#earth-what-is
+{
+  background-color: #1E8E43;
+  visibility: hidden;
+}
+#earth-inside
+{
+  background-color: #1E8E43;
+  visibility: hidden;
+}
+.earth-svg
+{
+  visibility: hidden;
+}
+#earth-crust-label
+{
+  position: absolute;
+  top: 55px;
+  left: 40%;
+}
+#earth-mantle-label
+{
+  position: absolute;
+  top: 100px;
+  left: 40%;
+}
+#earth-outer-core-label
+{
+  position: absolute;
+  top: 150px;
+  left: 40%;
+}
+#earth-inner-core-label
+{
+  position: absolute;
+  top: 192px;
+  left: 40%;
+}
+#earth-facts
+{
+  background-color: #1E8E43;
+  visibility: hidden;
+}
+.btn-earth
+{
+  border-color: transparent;
+  background-color: #177135;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-earth:hover
+{
+  background-color:#59dd85
+}
+.back-btn-earth
+{
+  background-color: #177135;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-earth:hover
+{
+  background-color:#59dd85;
+}
+
+/* Mars CSS */
+#mars-home 
+{
+  background-color: #A84E27;
+  visibility: hidden;
+}
+#mars-what-is
+{
+  background-color: #A84E27;
+  visibility: hidden;
+}
+#mars-inside
+{
+  background-color: #A84E27;
+  visibility: hidden;
+}
+.mars-svg
+{
+  visibility: hidden;
+}
+#mars-crust-label
+{
+  position: absolute;
+  top: 60px;
+  left: 40%;
+}
+#mars-mantle-label
+{
+  position: absolute;
+  top: 110px;
+  left: 40%;
+}
+#mars-core-label
+{
+  position: absolute;
+  top: 190px;
+  left: 40%;
+}
+#mars-facts
+{
+  background-color: #A84E27;
+  visibility: hidden;
+}
+.btn-mars
+{
+  border-color: transparent;
+  background-color: #833A1A;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-mars:hover
+{
+  background-color:#e08a64
+}
+.back-btn-mars
+{
+  background-color: #833A1A;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-mars:hover
+{
+  background-color:#e08a64;
+}
+
+/* Jupiter CSS */
+#jupiter-home 
+{
+  background-color: #BCB78B;
+  visibility: hidden;
+}
+#jupiter-what-is
+{
+  background-color: #BCB78B;
+  visibility: hidden;
+}
+#jupiter-inside
+{
+  background-color: #BCB78B;
+  visibility: hidden;
+}
+.jupiter-svg
+{
+  visibility: hidden;
+}
+#jupiter-atmosphere-label
+{
+  position: absolute;
+  top: 95px;
+  left: 40%;
+}
+#jupiter-mantle-label
+{
+  position: absolute;
+  top: 150px;
+  left: 40%;
+}
+#jupiter-core-label
+{
+  position: absolute;
+  top: 195px;
+  left: 40%;
+}
+#jupiter-facts
+{
+  background-color: #BCB78B;
+  visibility: hidden;
+}
+.btn-jupiter
+{
+  border-color: transparent;
+  background-color: #9B976E;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-jupiter:hover
+{
+  background-color:#d1d0bd
+}
+.back-btn-jupiter
+{
+  background-color: #9B976E;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-jupiter:hover
+{
+  background-color:#d1d0bd;
+}
+
+/* Saturn CSS */
+#saturn-home 
+{
+  background-color: #CFAD84;
+  visibility: hidden;
+}
+#saturn-what-is
+{
+  background-color: #CFAD84;
+  visibility: hidden;
+}
+#saturn-inside
+{
+  background-color: #CFAD84;
+  visibility: hidden;
+}
+.saturn-svg
+{
+  visibility: hidden;
+}
+#saturn-atmosphere-label
+{
+  position: absolute;
+  top: 100px;
+  left: 40%;
+}
+#saturn-mantle-label
+{
+  position: absolute;
+  top: 140px;
+  left: 40%;
+}
+#saturn-core-label
+{
+  position: absolute;
+  top: 190px;
+  left: 40%;
+}
+#saturn-facts
+{
+  background-color: #CFAD84;
+  visibility: hidden;
+}
+.btn-saturn
+{
+  border-color: transparent;
+  background-color: #A88C6C;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-saturn:hover
+{
+  background-color:#D6C9BA
+}
+.back-btn-saturn
+{
+  background-color: #A88C6C;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-saturn:hover
+{
+  background-color:#D6C9BA;
+}
+
+/* Uranus CSS */
+#uranus-home 
+{
+  background-color: #8DC4D0;
+  visibility: hidden;
+}
+#uranus-what-is
+{
+  background-color: #8DC4D0;
+  visibility: hidden;
+}
+#uranus-inside
+{
+  background-color: #8DC4D0;
+  visibility: hidden;
+}
+.uranus-svg
+{
+  visibility: hidden;
+}
+#uranus-atmosphere-label
+{
+  position: absolute;
+  top: 110px;
+  left: 40%;
+}
+#uranus-mantle-label
+{
+  position: absolute;
+  top: 160px;
+  left: 40%;
+}
+#uranus-core-label
+{
+  position: absolute;
+  top: 195px;
+  left: 40%;
+}
+#uranus-facts
+{
+  background-color: #8DC4D0;
+  visibility: hidden;
+}
+.btn-uranus
+{
+  border-color: transparent;
+  background-color: #6C9AA8;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-uranus:hover
+{
+  background-color:#B3CBD2
+}
+.back-btn-uranus
+{
+  background-color: #6C9AA8;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-uranus:hover
+{
+  background-color:#B3CBD2;
+}
+
+/* Neptune CSS */
+#neptune-home 
+{
+  background-color: #3E75A7;
+  visibility: hidden;
+}
+#neptune-what-is
+{
+  background-color: #3E75A7;
+  visibility: hidden;
+}
+#neptune-inside
+{
+  background-color: #3E75A7;
+  visibility: hidden;
+}
+.neptune-svg
+{
+  visibility: hidden;
+}
+#neptune-atmosphere-label
+{
+  position: absolute;
+  top: 100px;
+  left: 40%;
+}
+#neptune-mantle-label
+{
+  position: absolute;
+  top: 130px;
+  left: 40%;
+}
+#neptune-core-label
+{
+  position: absolute;
+  top: 195px;
+  left: 40%;
+}
+#neptune-facts
+{
+  background-color: #3E75A7;
+  visibility: hidden;
+}
+.btn-neptune
+{
+  border-color: transparent;
+  background-color: #295883;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-neptune:hover
+{
+  background-color:#83b0d8
+}
+.back-btn-neptune
+{
+  background-color: #295883;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-neptune:hover
+{
+  background-color:#83b0d8;
+}
+
+/* Pluto CSS */
+#pluto-home 
+{
+  background-color: #824e26;
+  visibility: hidden;
+}
+#pluto-what-is
+{
+  background-color: #824e26;
+  visibility: hidden;
+}
+#pluto-inside
+{
+  background-color: #824e26;
+  visibility: hidden;
+}
+.pluto-svg
+{
+  visibility: hidden;
+}
+#pluto-crust-label
+{
+  position: absolute;
+  top: 90px;
+  left: 40%;
+}
+#pluto-mantle-label
+{
+  position: absolute;
+  top: 115px;
+  left: 40%;
+}
+#pluto-core-label
+{
+  position: absolute;
+  top: 195px;
+  left: 40%;
+}
+#pluto-facts
+{
+  background-color: #824e26;
+  visibility: hidden;
+}
+.btn-pluto
+{
+  border-color: transparent;
+  background-color: #B08768;
+
+  color: #000000;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3vh;
+}
+.btn-pluto:hover
+{
+  background-color:#dbc8b9
+}
+.back-btn-pluto
+{
+  background-color: #B08768;
+
+  color: #FFFFFF;
+  font-family: 'Sofia Pro', sans-serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+.back-btn-pluto:hover
+{
+  background-color:#dbc8b9;
+}
+
+
+/* Scales the bodies and the Solar System */
+#solar-system #bodies
+{
+  display: inline-block;
+  vertical-align: middle;
+
+  min-width: 140%;
+  min-height: 140%;
+
+  width: 140%;
+  height: 140%;
+}
+
+/* Viewport and proxy used for pan and zooming */
+#viewport {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+}
+
+.proxy {
+  fill: none;
+  stroke: none;
+}
+
+
+/* Highlights */
+#sun-highlight
+{
+  pointer-events: auto;
+}
+
+#sun-highlight:hover
+{
+  opacity: 1;
+}
+#mercury-highlight:hover
+{
+  opacity: 1;
+}
+#venus-highlight:hover
+{
+  opacity: 1;
+}
+#earth-highlight:hover
+{
+  opacity: 1;
+}
+#mars-highlight:hover
+{
+  opacity: 1;
+}
+#jupiter-highlight:hover
+{
+  opacity: 1;
+}
+#saturn-highlight:hover
+{
+  opacity: 1;
+}
+#uranus-highlight:hover
+{
+  opacity: 1;
+}
+#neptune-highlight:hover
+{
+  opacity: 1;
+}
+#pluto-highlight:hover
+{
+  opacity: 1;
+}
+
+.planetName 
+{
+  fill: #ffffff;
+  font-weight: 500;
+}
+.sunName
+{
+  fill: #000000;
+  font-size: 270%;
+  font-weight: 500;
+}
